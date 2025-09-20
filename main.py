@@ -366,7 +366,7 @@ def go_to_quiz_page(page_name):
 try:
     CLIENT_ID = st.secrets["google_credentials"]["client_id"]
     CLIENT_SECRET = st.secrets["google_credentials"]["client_secret"]
-    REDIRECT_URI = "http://localhost:8501"
+    REDIRECT_URI = "https://e2dpv48cfxj39fjqyvmq6m.streamlit.app/"
     oauth2 = OAuth2Component(CLIENT_ID, CLIENT_SECRET, "https://accounts.google.com/o/oauth2/v2/auth", "https://oauth2.googleapis.com/token", "https://oauth2.googleapis.com/token", "https://oauth2.googleapis.com/revoke")
     OAUTH_AVAILABLE = True
 except Exception as e:
